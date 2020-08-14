@@ -1,6 +1,6 @@
 using System;
 
-namespace DailyBlogger.Models
+namespace Sakila.Models
 {
     public class ErrorViewModel
     {

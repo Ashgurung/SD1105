@@ -10,10 +10,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
-using DailyBlogger.Models;
+using Sakila.Models;
 
-namespace DailyBlogger
+namespace Sakila
 {
     public class Startup
     {
@@ -36,7 +35,7 @@ namespace DailyBlogger
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddDbContext<BlogContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Blog")));
+            services.AddDbContext<SakilaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Sakila")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

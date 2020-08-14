@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using DailyBlogger.Models;
+using Sakila.Models;
 
-namespace blog.Controllers
+namespace Sakila.Controllers
 {
     public class HomeController : Controller
     {
