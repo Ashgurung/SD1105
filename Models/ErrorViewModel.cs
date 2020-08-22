@@ -1,6 +1,6 @@
 using System;
 
-namespace Sakila.Models
+namespace BlindDating.Models
 {
     public class ErrorViewModel
     {
